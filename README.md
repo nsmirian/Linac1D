@@ -3,6 +3,12 @@
 A one-dimensional MATLAB macroparticle-tracking code for longitudinal
 electron-beam dynamics in a linear accelerator.
 
+## Author
+
+Author: N. S. Mirian  
+Affiliation: ...  
+Email: ...
+
 ## Initial capabilities
 
 - Gaussian beam generation
