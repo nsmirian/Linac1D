@@ -23,7 +23,7 @@ function [beam, history] = trackLattice(beam, lattice, constants)
                 beam = trackRFCavity(beam, element, constants);
 
             case 'compressor'
-                beam = trackCompressor(beam, element);
+                beam = trackCompressor(beam, element, constants);
 
             case 'lscsection'
                 beam = trackLSCSection(beam, element, constants);

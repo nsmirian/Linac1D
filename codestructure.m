@@ -7,6 +7,8 @@ elements/
 collective/
     trackLSCSection.m
     applyLSCKick.m
+    applyCSRKick.m
+    csrImpedance.m
     lscImpedance.m
     smoothGaussian.m
 
@@ -20,3 +22,6 @@ diagnostics/
 examples/
     simpleCompression.m
     lscMicrobunching.m
+
+tests/
+    testCSRImpedance.m

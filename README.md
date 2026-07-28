@@ -15,6 +15,7 @@ Email: n.mirian@hzdr.de
 - sinusoidal RF cavity tracking
 - first-, second-, and third-order longitudinal transport
 - magnetic bunch compression
+- approximate 1D steady-state coherent synchrotron radiation in compressors
 - current-profile calculation
 - bunching-factor calculation
 - FFT-based framework for longitudinal space charge
@@ -29,6 +30,11 @@ Email: n.mirian@hzdr.de
 - `main.m`: main example script
 - `example_trackLattice.m`: example showing how to build and track a lattice
 - `trackLattice.m`: tracks a beam through a cell array of lattice elements
+- `tests/`: small validation scripts
+
+The bunch compressor can optionally apply an approximate 1D free-space
+steady-state CSR kick by setting `compressor.csr.enabled = true` and
+providing the total dipole length and bending radius.
 
 ## Coordinate convention
 
@@ -48,3 +54,10 @@ From MATLAB:
 
 ```matlab
 run('main.m')
+```
+
+Run the CSR impedance check with:
+
+```matlab
+run('tests/testCSRImpedance.m')
+```

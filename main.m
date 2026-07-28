@@ -69,8 +69,13 @@ compressor.name  = 'BC1';
 compressor.R56   = -0.040;                % [m]
 compressor.T566  = 0.0;                   % [m]
 compressor.U5666 = 0.0;                   % [m]
+compressor.csr.enabled   = true;         % Approximate 1D steady-state CSR
+compressor.csr.length    = 4.0;           % Total dipole length [m]
+compressor.csr.radius    = 5.0;           % Dipole bending radius [m]
+compressor.csr.nBins     = simulation.nBins;
+compressor.csr.smoothing = 2.0;           % Gaussian smoothing in grid cells
 
-beam = trackCompressor(beam, compressor);
+beam = trackCompressor(beam, compressor, constants);
 
 beamAfterBC = beam;
 
