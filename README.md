@@ -13,6 +13,17 @@ electron-beam dynamics in a linear accelerator.
 - bunching-factor calculation
 - FFT-based framework for longitudinal space charge
 
+## Code layout
+
+- `elements/`: single-particle beamline maps, such as RF cavities,
+  drifts, and bunch compressors
+- `collective/`: collective-effect models, such as longitudinal space charge
+- `diagnostics/`: current profiles, bunching factors, beam summaries, and
+  plotting helpers
+- `main.m`: main example script
+- `example_trackLattice.m`: example showing how to build and track a lattice
+- `trackLattice.m`: tracks a beam through a cell array of lattice elements
+
 ## Coordinate convention
 
 The longitudinal coordinates are

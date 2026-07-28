@@ -14,6 +14,7 @@ diagnostics/
     calculateCurrent.m
     calculateBunching.m
     plotLongitudinalPhaseSpace.m
+    plotLongitudinalBeamProfile.m
     printBeamParameters.m
 
 examples/

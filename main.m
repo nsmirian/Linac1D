@@ -2,9 +2,11 @@ clear;
 clc;
 close all;
 
-addpath('elements');
-addpath('collective');
-addpath('diagnostics');
+projectRoot = fileparts(mfilename('fullpath'));
+
+addpath(fullfile(projectRoot, 'elements'));
+addpath(fullfile(projectRoot, 'collective'));
+addpath(fullfile(projectRoot, 'diagnostics'));
 
 %% Physical constants
 
