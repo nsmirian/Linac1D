@@ -92,17 +92,9 @@ plotLongitudinalPhaseSpace(beamInitial, 'Initial beam');
 plotLongitudinalPhaseSpace(beamAfterRF, 'After RF cavity');
 plotLongitudinalPhaseSpace(beamAfterBC, 'After bunch compressor');
 
-figure;
-hold on;
-
-[z1, I1] = calculateCurrent(beamInitial, simulation.nBins, constants);
-[z2, I2] = calculateCurrent(beamAfterBC, simulation.nBins, constants);
-
-plot(z1*1e3, I1);
-plot(z2*1e3, I2);
-
-xlabel('z [mm]');
-ylabel('Current [A]');
-legend('Initial', 'After compressor');
-grid on;
-box on;
+plotLongitudinalBeamProfile( ...
+    {beamInitial, beamAfterRF, beamAfterBC}, ...
+    {'Initial', 'After RF cavity', 'After bunch compressor'}, ...
+    simulation.nBins, ...
+    constants, ...
+    'Longitudinal beam profile');
