@@ -22,10 +22,10 @@ rng(1);
 
 %% Initial beam
 
-beam.E0           = 6.6e6;       % Reference total energy [eV]
+beam.E0           = 60.6e6;       % Reference total energy [eV]
 beam.charge       = 250e-12;     % Bunch charge [C]
 beam.sigma_z      = 1.0e-3;      % Initial rms bunch length [m]
-beam.sigma_delta  = 2.0e-4;      % Uncorrelated relative energy spread
+beam.sigma_delta  = 10.0e-4;      % Uncorrelated relative energy spread
 beam.sigma_x      = 300e-6;      % Effective rms transverse size [m]
 beam.sigma_y      = 300e-6;
 
