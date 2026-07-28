@@ -1,0 +1,16 @@
+wavelength = logspace(-6, -3, 300);
+k = 2*pi ./ wavelength;
+
+bInitial = calculateBunching(beamInitial, k(:));
+bFinal   = calculateBunching(beamAfterBC, k(:));
+
+figure;
+loglog(wavelength*1e6, abs(bInitial));
+hold on;
+loglog(wavelength*1e6, abs(bFinal));
+
+xlabel('Wavelength [\mum]');
+ylabel('|b(k)|');
+legend('Initial', 'Final');
+grid on;
+box on;
