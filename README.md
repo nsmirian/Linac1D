@@ -7,7 +7,7 @@ electron-beam dynamics in a linear accelerator.
 
 Author: N. S. Mirian  
 Affiliation: Helmholtz-Zentrum Dresden-Rossendorf  
-Email: n.mirian@hzdr.de
+Email: nsmirian64@gmail.com
 
 ## Initial capabilities
 
